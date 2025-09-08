@@ -1,0 +1,124 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-1: #051413;
+  --color-2: #031116;
+  --color-3: #162523;
+  --color-4: #1addd3;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--color-1);
+  color: white;
+  line-height: 1.6;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+}
+
+nav a {
+  color: white;
+  margin: 0px 10px;
+  text-decoration: none;
+}
+
+nav a.active {
+  color: var(--color-4);
+}
+nav a:hover {
+  color: var(--color-4);
+}
+
+/* main section */
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px;
+}
+
+.detail {
+  max-width: 50%;
+}
+.detail h1 {
+  font-size: 3.5em;
+}
+.highlight {
+  color: var(--color-4);
+}
+
+.social a {
+  font-size: 1.5em;
+  margin: 10px;
+  text-decoration: none;
+  color: var(--color-4);
+}
+
+.images img {
+  width: 250px;
+  border-radius: 50%;
+}
+
+/* sections */
+.section {
+  padding: 70px;
+  background: var(--color-3);
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.alternate {
+  background-color: var(--color-1);
+}
+
+/* rating */
+.rating button {
+  font-size: 1.5em;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  background: #00aaff;
+  color: white;
+  border-radius: 5px;
+}
+.rating button:hover {
+  background: var(--color-4);
+}
+
+aside {
+  flex: 1;
+  padding: 20px;
+  border-left: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+/* this is for the footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: var(--color-3);
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 300px;
+  height: 450px;
+}
